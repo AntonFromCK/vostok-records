@@ -17,7 +17,7 @@ var App = (function () {
                 instrumental: 'instrumental.html.twig',
                 speaker: 'speaker.html.twig',
                 voiceVideo: 'voice_video.html.twig',
-                answerPhone: 'answer_phone.html.twig',
+                priceList: 'price_list.html.twig',
                 footer: 'footer.html.twig'
             }
         },
@@ -34,7 +34,7 @@ var App = (function () {
           instrumental: false,
           speaker: false,
           voiceVideo: false,
-          answerPhone: false,
+          priceList: false,
           footer: false
         },
 
@@ -171,7 +171,7 @@ var App = (function () {
 
                 'speaker': function() {
                     Render.content('speaker');
-
+                    Helper.initOwlCarousel('#speaker-slider');
                     Helper.initUbaPlayer();
                 },
 
@@ -181,8 +181,8 @@ var App = (function () {
                     Helper.initUbaPlayer();
                 },
 
-                'answerPhone': function() {
-                    Render.content('answerPhone');
+                'priceList': function() {
+                    Render.content('priceList');
 
                     Helper.initUbaPlayer();
                 }

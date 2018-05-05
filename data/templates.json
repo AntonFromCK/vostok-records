@@ -31,8 +31,8 @@
     "template": "voiceVideo",
     "namePage": "Галерея"
   },
-  "answerPhone": {
-    "template": "answerPhone",
+  "priceList": {
+    "template": "priceList",
     "namePage": "Услуги и цены"
   }
 }
