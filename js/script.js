@@ -1,7 +1,3 @@
-/**
- * Created by MapleMap on 27.05.14.
- * Updated by MapleMap on 27.07.15.
- */
 var Helper = {
 
     initOwlCarousel: function (element) {
