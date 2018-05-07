@@ -159,7 +159,7 @@ var App = (function () {
 
                 'production': function() {
                     Render.content('production');
-
+                    Helper.initOwlCarousel('#production-slider');
                     Helper.initUbaPlayer();
                 },
 
