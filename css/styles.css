@@ -1,7 +1,8 @@
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------FONTS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic);
+/*@import "fontello.css";*/
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic);
 @font-face {
     font-family: 'any-old-icon';
     src:url('../fonts/any-old-icon.eot');
@@ -23,22 +24,13 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "pictonic";
-    src: url('../fonts/pictonic.eot');
-    src: url('../fonts/pictonic.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/pictonic.ttf') format('truetype'),
-      url('../fonts/pictonic.woff') format('woff'),
-      url('../fonts/pictonic.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.eot?39123235');
-    src: url('../fonts/fontello.eot?39123235#iefix') format('embedded-opentype'),
-      url('../fonts/fontello.woff?39123235') format('woff'),
-      url('../fonts/fontello.ttf?39123235') format('truetype'),
-      url('../fonts/fontello.svg?39123235#email') format('svg');
+    src: url('../fonts/fontello.eot?6290822');
+    src: url('../fonts/fontello.eot?6290822#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff2?6290822') format('woff2'),
+    url('../fonts/fontello.woff?6290822') format('woff'),
+    url('../fonts/fontello.ttf?6290822') format('truetype'),
+    url('../fonts/fontello.svg?6290822#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -243,8 +235,8 @@ h2 {
 }
 .social a {
     display: block;
-    font-family: "pictonic";
-    font-size: 1.7em;
+    font-family: "fontello";
+    font-size: 1.5em;
       -webkit-transition: all .4s;
       -moz-transition: all .4s;
       -ms-transition: all .4s;
@@ -261,9 +253,16 @@ h2 {
       /*-ms-transform: scale(1.8, 1.8);*/
     /*transform: scale(1.8, 1.8);*/
 /*}*/
-.social .icon-rus-vk-02:before { content:""; }
+/*.social .icon-rus-vk-02:before { content:""; }
 .social .icon-twitter-1:before { content:""; }
-.social .icon-youtube:before { content:""; }
+.social .icon-youtube:before { content:""; }*/
+
+.social .icon-facebook-squared:before { content: '\66'; } /* 'f' */
+.social .icon-instagram:before { content: '\69'; } /* 'i' */
+.social .icon-skype:before { content: '\73'; } /* 's' */
+.social .icon-youtube:before { content: '\e800'; } /* '' */
+.social .icon-play-circled2-1:before { content: '\e802'; } /* '' */
+.social .icon-vkontakte:before { content: '\f189'; } /* '' */
 /*----------------------------------------------------------------------------------*/
 /*---------------------------------------NAV----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -272,7 +271,7 @@ h2 {
     float: right;
     color: rgba(224, 0, 0, 0.7);
     font-family: 'fontello';
-    font-size: 3em;
+    font-size: 2.5em;
     cursor: pointer;
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
@@ -284,7 +283,7 @@ h2 {
     display: block;
 }
 .icon-menu:before {
-    content: "\e801";
+    content: '\e802';
     font-weight: normal;
 }
 #header .nav {
@@ -597,7 +596,7 @@ content: "\e035";
     font-family: 'fontello';
 }
 .info .email:before {
-    content: '\e802';
+    content: '\e801';
 }
 .info .email,
 .info .email+dd {
@@ -610,9 +609,38 @@ content: "\e035";
     font-family: 'fontello';
 }
 .info .skype:before {
+    content: '\73';
+}
+.info .vk {
+    font-family: 'fontello';
+}
+.info .vk:before {
+    content: '\f189';
+}
+.info .fb {
+    font-family: 'fontello';
+}
+.info .fb:before {
+    content: '\66';
+}
+.info .inst {
+    font-family: 'fontello';
+}
+.info .inst:before {
+    content: '\69';
+}
+.info .youtube {
+    font-family: 'fontello';
+}
+.info .youtube:before {
     content: '\e800';
 }
-
+.info .phone {
+    font-family: 'fontello';
+}
+.info .phone:before {
+    content: '\e803';
+}
 .google-maps {
     float: left;
     width: 60%;
@@ -698,6 +726,75 @@ content: "\e035";
       -o-transition: all .5s;
     transition: all .5s;
 }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SPEAKER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.speaker--data #speaker-slider .slide{
+    margin-left: 10px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------PRODUCTION-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+ #production-slider .slide{
+    margin-left: 10px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------PRICE----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.table-container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #FFF;
+}
+
+.table-container td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.table-container {
+    text-align: left;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+    opacity: .7;
+}
+
+.table-container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;
+}
+
+/* Background-color of the odd rows */
+.table-container tr:nth-child(odd) {
+    background-color: #63625d;
+}
+
+/* Background-color of the even rows */
+.table-container tr:nth-child(even) {
+    background-color: #63625d;
+}
+
+.table-container th {
+    background-color: #1e1e1e;
+}
+
+.table-container td:first-child { color: #FFF; }
+
+@media (max-width: 800px) {
+    .table-container td:nth-child(4),
+    .table-container th:nth-child(4) { display: none; }
+}
+
+
+
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------mediaQuery's------------------------------------*/
 /*----------------------------------------------------------------------------------*/
