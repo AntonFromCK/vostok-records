@@ -177,7 +177,7 @@ var App = (function () {
 
                 'voiceVideo': function() {
                     Render.content('voiceVideo');
-
+                    Helper.initOwlCarousel('#gallery');
                     Helper.initUbaPlayer();
                 },
 
