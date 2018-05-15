@@ -2,11 +2,22 @@ var Helper = {
 
     initOwlCarousel: function (element) {
         $(element).owlCarousel({
-            items : 3,
+          navigation: true,
+          items : 3,
             itemsDesktop : [1199,3],
-            itemsDesktopSmall : [979,3]
+            itemsDesktopSmall : [979,3],
         });
     },
+
+      initLogoHover: function () {
+        $(".logo-img").hover(function() {
+            var src = ($(this).attr("src") === "./img/logo.png")
+              ? "./img/logo-hover.png"
+              : "./img/logo.png";
+            $(this).attr("src", src);
+          }
+        );
+      },
 
     initCreatedData: function () {
         var createdYear = 2014,
