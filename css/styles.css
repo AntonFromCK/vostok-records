@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------FONTS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/*@import "fontello.css";*/
+
 @import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic);
 @font-face {
     font-family: 'any-old-icon';
@@ -218,6 +218,7 @@ h2 {
       -o-transition: all .3s;
     transition: all .3s;
 }
+
 /*.name_page span {*/
     /*margin-left: -.35em;*/
 /*}*/
@@ -576,11 +577,106 @@ content: "\e035";
     transform: translateY(-1.3em);
 }
 /*----------------------------------------------------------------------------------*/
-/*----------------------------------------ABOUT PAGE--------------------------------*/
+/*----------------------------------------owl-carousel------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .owl-carousel {
     margin: 1.5em auto -1em auto;
 }
+.owl-carousel .owl-buttons {
+    position: relative;
+}
+#production-slider.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -150px;
+    left: -60px;
+}
+ #production-slider.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -150px;
+    right: -85px;
+}
+#speaker-slider.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -150px;
+    left: -60px;
+}
+#speaker-slider.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -150px;
+    right: -85px;
+}
+
+#gallery.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -180px;
+    left: -65px;
+}
+#gallery.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -180px;
+    right: -85px;
+}
+#equipment.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -180px;
+    left: -65px;
+}
+#equipment.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -180px;
+    right: -85px;
+}
+#room.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -180px;
+    left: -65px;
+}
+#room.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -180px;
+    right: -85px;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTACTS PAGE--------------------------------*/
 /*----------------------------------------------------------------------------------*/
