@@ -835,6 +835,30 @@ content: "\e035";
     margin-left: 10px;
 }
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------PRODUCTION-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#instrumental-slider .slider{
+    margin-left: 10px;
+}
+
+#instrumental-slider.owl-carousel .owl-buttons .owl-prev {
+    text-indent: -9999px;
+    background: url("../img/prev.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: -150px;
+    left: -60px;
+}
+#instrumental-slider.owl-carousel .owl-buttons .owl-next {
+    background: url("../img/next.png") no-repeat !important;
+    height: 45px;
+    width: 50px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -150px;
+    right: -85px;
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------PRICE----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .table-container th h1 {

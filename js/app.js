@@ -168,6 +168,7 @@ var App = (function () {
 
                 'instrumental': function() {
                     Render.content('instrumental');
+                    Helper.initOwlCarousel('#instrumental-slider');
                     Helper.initLogoHover();
                     Helper.initUbaPlayer();
                 },
